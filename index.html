@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#08080b" />
+    <script>
+      // Apply the saved theme before first paint so there is no flash of the wrong theme.
+      (function () {
+        try {
+          var stored = localStorage.getItem("mn-portfolio-theme");
+          if (stored === "light" || stored === "dark") {
+            document.documentElement.dataset.theme = stored;
+            document.documentElement.style.colorScheme = stored;
+          }
+        } catch (error) {
+          /* Storage can be blocked; the default dark theme still applies. */
+        }
+      })();
+    </script>
+
+    <title>Mohammed Nisaruddin | AI &amp; ML Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Explore Mohammed Nisaruddin's portfolio, featuring AI, machine learning, Python, data analytics, and AI-integrated application development."
+    />
+    <meta name="author" content="Mohammed Nisaruddin" />
+    <meta
+      name="keywords"
+      content="Mohammed Nisaruddin, AI developer, machine learning, generative AI, RAG, Python, React, full-stack developer, Udupi"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mohammed Nisaruddin" />
+    <meta property="og:title" content="Mohammed Nisaruddin | AI &amp; ML Developer Portfolio" />
+    <meta
+      property="og:description"
+      content="AI &amp; ML student and AI-integrated full-stack developer building intelligent applications with Python, generative AI and modern web technologies."
+    />
+    <meta property="og:image" content="/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Mohammed Nisaruddin — AI & ML developer portfolio" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mohammed Nisaruddin | AI &amp; ML Developer Portfolio" />
+    <meta
+      name="twitter:description"
+      content="AI &amp; ML student and AI-integrated full-stack developer building intelligent applications with Python, generative AI and modern web technologies."
+    />
+    <meta name="twitter:image" content="/og.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mohammed Nisaruddin",
+        "jobTitle": "AI & ML Student | AI-Integrated Full-Stack Developer",
+        "email": "mailto:mnisaruddin56@gmail.com",
+        "url": "https://github.com/nisar-studio",
+        "sameAs": [
+          "https://github.com/nisar-studio",
+          "https://www.linkedin.com/in/mohammednisaruddin-88a8ab415"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Udupi",
+          "addressRegion": "Karnataka",
+          "addressCountry": "India"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "AJ Institute of Engineering and Technology, Mangaluru"
+        },
+        "knowsAbout": [
+          "Artificial Intelligence",
+          "Machine Learning",
+          "Generative AI",
+          "Python",
+          "Data Analysis",
+          "Full-Stack Development"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
